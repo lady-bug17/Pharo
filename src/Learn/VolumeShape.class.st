@@ -8,9 +8,33 @@ Class {
 	#category : #Learn
 }
 
+{ #category : #accessing }
+VolumeShape >> base [
+
+	^ base
+]
+
+{ #category : #accessing }
+VolumeShape >> base: anObject [
+
+	base := anObject
+]
+
 { #category : #calculations }
 VolumeShape >> baseArea [ 
 ^base area
+]
+
+{ #category : #accessing }
+VolumeShape >> height [
+
+	^ height
+]
+
+{ #category : #accessing }
+VolumeShape >> height: anObject [
+
+	height := anObject
 ]
 
 { #category : #initialization }

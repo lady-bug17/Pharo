@@ -4,6 +4,26 @@ Class {
 	#category : #Learn
 }
 
+{ #category : #'instance creation' }
+TrianglePiramid class >> newHeight: aNumber andA: bNumber andB: cNumber andC: dNumber [
+
+| inst |
+inst := super new.
+inst base: (Triangle newA: bNumber andB: cNumber andC: dNumber).
+inst height: aNumber .
+^inst
+]
+
+{ #category : #'instance creation' }
+TrianglePiramid class >> newHeith: aNumber andA: bNumber andB: cNumber andC: dNumber [
+
+| inst |
+inst := super new.
+inst base: (Triangle newA: bNumber andB: cNumber andC: dNumber).
+inst height: aNumber .
+^inst
+]
+
 { #category : #initialization }
 TrianglePiramid >> initialize [ 
 height := 1.

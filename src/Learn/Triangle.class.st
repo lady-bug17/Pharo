@@ -9,6 +9,17 @@ Class {
 	#category : #Learn
 }
 
+{ #category : #'instance creation' }
+Triangle class >> newA: aNumber andB: bNumber andC: cNumber [
+
+| inst |
+inst := super new.
+inst a: aNumber .
+inst b: bNumber .
+inst c: cNumber .
+^inst
+]
+
 { #category : #accessing }
 Triangle >> a [
 

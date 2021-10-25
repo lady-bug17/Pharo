@@ -8,8 +8,8 @@ Class {
 TriangleTest >> testArea [
    | a b |
 a := Triangle  new.
-b := Triangle new a: 3 b: 4 c: 5.
-self  assert: a area equals: 3 sqrt / 2.
+b := Triangle newA: 3 andB: 4 andC: 5.
+self  assert: a area equals: 3 sqrt / 4.
 self assert: b area equals: 6
 ]
 
@@ -24,7 +24,7 @@ TriangleTest >> testInitialization [
 TriangleTest >> testPerimeter [ 
    | a b |
 a := Triangle  new.
-b := Triangle new a: 3 b: 4 c: 5.
+b := Triangle newA: 3 andB: 4 andC: 5.
 self  assert: a perimeter  equals: 3.
 self assert: b perimeter  equals: 12
 ]

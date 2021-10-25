@@ -4,6 +4,16 @@ Class {
 	#category : #Learn
 }
 
+{ #category : #'instance creation' }
+Conus class >> newBase: aNumber andHeight: bNumber [
+
+| inst |
+inst := super new.
+inst base: (Circle newRadius: aNumber).
+inst height: bNumber.
+^inst
+]
+
 { #category : #initialization }
 Conus >> initialize [ 
 height := 1.
