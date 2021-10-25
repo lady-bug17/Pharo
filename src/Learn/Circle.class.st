@@ -14,7 +14,7 @@ Circle >> area [
 
 { #category : #initialization }
 Circle >> initialize [ 
- radius := 1
+radius := 1
 ]
 
 { #category : #calculations }
